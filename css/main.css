@@ -1,4 +1,9 @@
 @charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -42,8 +47,6 @@ h2 {
 }
 
 ul, li {
-  display: block;
-  padding: 0;
   margin: 0;
 }
 
@@ -56,7 +59,7 @@ button {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1370px;
   margin: 0 auto;
   /*позиционирование по центру*/
   padding: 0 15px;
@@ -68,7 +71,7 @@ button {
 }
 
 .title_big {
-  font-size: 36;
+  font-size: 36px;
 }
 
 p {
@@ -78,6 +81,10 @@ p {
 
 header a {
   color: #fff;
+}
+
+.main ul, .main li {
+  list-style-type: none;
 }
 
 .menu {
@@ -93,10 +100,32 @@ header a {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.03em;
+  position: relative;
+}
+
+.menu li a:hover:before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #FF44B4;
+}
+
+.menu li a.selected:before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #FF44B4;
 }
 
 .menu li {
   margin-right: 55px;
+  list-style-type: none;
 }
 
 .tel {
@@ -307,7 +336,7 @@ header a {
 }
 
 .why__card {
-  width: 25%;
+  width: 30%;
   border: 25px solid transparent;
   -o-border-image: linear-gradient(180deg, #ff44b4, #6371ef);
      border-image: -webkit-gradient(linear, left top, left bottom, from(#ff44b4), to(#6371ef));
@@ -502,7 +531,7 @@ header a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 .footer__nav_row {
@@ -572,14 +601,18 @@ header a {
   margin-top: 50px;
 }
 
+.services__cards {
+  padding-top: 50px;
+}
+
 .services__card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
-  padding-top: 120px;
+  margin-bottom: 120px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -621,6 +654,8 @@ header a {
   padding: 5px 0px;
   text-align: center;
   text-transform: uppercase;
+  text-align: right;
+  padding-right: 25px;
 }
 
 .services__card-subtitle {
@@ -632,6 +667,11 @@ header a {
   min-height: 150px;
   padding: 30px 90px;
   font-size: 20px;
+  list-style-type: disc;
+}
+
+.services__card-subtitle li {
+  list-style-type: disc;
 }
 
 .services__card-btn {
@@ -717,9 +757,9 @@ header a {
 
 .contact__adress-text {
   border: 25px solid transparent;
-  -o-border-image: linear-gradient(180deg, #ff44b4, #6371ef);
-     border-image: -webkit-gradient(linear, left top, left bottom, from(#ff44b4), to(#6371ef));
-     border-image: linear-gradient(180deg, #ff44b4, #6371ef);
+  -o-border-image: linear-gradient(180deg, #6371ef, #ff44b4);
+     border-image: -webkit-gradient(linear, left top, left bottom, from(#6371ef), to(#ff44b4));
+     border-image: linear-gradient(180deg, #6371ef, #ff44b4);
   border-image-slice: 1;
   position: relative;
   left: -25px;
@@ -748,6 +788,12 @@ header a {
   margin-bottom: 30px;
 }
 
+.contact__worktime ul, .contact__worktime li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .contact__phone {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -773,5 +819,58 @@ header a {
   width: 30%;
   margin: 90px auto;
   text-align: center;
+}
+
+.course__card-title {
+  text-align: right;
+}
+
+.about__offer {
+  background-image: url(../img/about-offer.png);
+  background-repeat: no-repeat;
+  padding: 280px 500px 200px 500px;
+}
+
+.about__offer h3 {
+  width: 500px;
+  padding-bottom: 11px;
+}
+
+.about__offer p {
+  width: 400px;
+  font-size: 18px;
+}
+
+.about__component {
+  margin: 40px 0;
+}
+
+.about__component img {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.about__component-text {
+  padding: 100px 0px 100px 50px;
+  position: relative;
+  left: -25px;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.about__expirience-text {
+  padding: 100px 50px;
+  border: 25px solid transparent;
+  -o-border-image: linear-gradient(180deg, #6371ef, #ff44b4);
+     border-image: -webkit-gradient(linear, left top, left bottom, from(#6371ef), to(#ff44b4));
+     border-image: linear-gradient(180deg, #6371ef, #ff44b4);
+  border-image-slice: 1;
+}
+
+.about__plug {
+  width: 100%;
+  padding: 40px 0 70px 0;
 }
 /*# sourceMappingURL=main.css.map */

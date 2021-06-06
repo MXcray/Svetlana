@@ -5,4 +5,8 @@ $( document ).ready(function() {
     	dotsClass: 'slider__dots',
     	arrows: false
     })
+
+	$("menu__link").click(function() {
+		$(this).addClass('.menu__link_active');
+	})
 });
