@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anomaly Happy</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Manrope:wght@300;400;500;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header id="header" class="header">
+        <div class="container">
+            <div class="nav">
+                <a href="index.html"><img class="logo" src="img/logo.svg" alt="Anomaly Happy"></a>
+                <ul class="menu" id="sideNav">
+                    <li class="menu__link">
+                        <a href="services.html">Услуги</a>
+                    </li>
+                    <li class="menu__link">
+                        <a href="contact.html">Контакты</a>
+                    </li>
+                    <li class="menu__link">
+                        <a href="course.html">Курсы</a>
+                    </li>
+                    <li class="menu__link">
+                        <a href="about.html">О нас</a>
+                    </li>
+                    <li>
+                        <a class="icon" id="menu" href="#">&#9776</a>
+                    </li>
+                </ul>
+                <a href="tel:+79512164814" class="tel">8-951-216-48-14</a>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <div class="form">
+        <div class="container">
+            <h3 class="form__title">Свяжемся с вами в ближайшее время</h3>
+            <form action="" method="POST">
+                <input type="text" name="name" class="name" id="name" placeholder="ФИО" pattern="[А-Яа-я ]+" required>
+                <input type="email" name="Email" class="Email" id="Email" placeholder="E-mail" required>
+                <input type="text" name="phone" class="phoneNumber" id="phone" placeholder="ТЕЛЕФОН" minlength="11"
+                    pattern="[0-9]{11}" required>
+                <label for="form__service">Выберите услугу</label>
+                <select name="service" id="form__service">
+                    <option value="Стрижка">Стрижка</option>
+                    <option value="Палировка волос">Палировка волос</option>
+                    <option value="кератиновое выпрямление">кератиновое выпрямление</option>
+                </select>
+                <label for="message">Комментарий:</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <input type="submit" value="Отправить" class="btn1">
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer pt">
+        <div class="container">
+            <nav class="footer__nav">
+                <div class="footer__nav_row">
+                    <a href="#" class="footer__nav-link">Facebook</a>
+                    <a href="#" class="footer__nav-link">Вконтакте</a>
+                    <a href="#" class="footer__nav-link">Instagram</a>
+                </div>
+                <div class="footer__nav_col">
+                    <a href="#" class="footer__nav-link">Телефон: 8-951-216-48-14</a>
+                    <a href="#" class="footer__nav-link">E-mail: anomalyhappy@mail.ru</a>
+                </div>
+            </nav>
+        </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

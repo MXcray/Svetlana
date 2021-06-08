@@ -16,21 +16,24 @@
 <body>
 	<header id="header" class="header">
 		<div class="container">
-			<div class="nav">
+			<div class="nav" >
 				<img class="logo" src="img/logo.svg" alt="Anomaly Happy">
-				<ul class="menu">
-                    <li>
-                        <a href="services.html" class="menu__link">Услуги</a>
+				<ul class="menu" id="sideNav">
+                    <li class="menu__link">
+                        <a href="services.html">Услуги</a>
                     </li>
-                    <li>
-                        <a href="contact.html" class="menu__link">Контакты</a>
+                    <li class="menu__link">
+                        <a href="contact.html">Контакты</a>
                     </li>
-                    <li>
-                        <a href="course.html" class="menu__link">Курсы</a>
+                    <li class="menu__link">
+                        <a href="course.html">Курсы</a>
                     </li>
-                    <li>
-                        <a href="about.html" class="menu__link">О нас</a>
+                    <li class="menu__link">
+                        <a href="about.html" >О нас</a>
                     </li>
+					<li>
+						<a class="icon" id="menu" href="#">&#9776</a>
+					</li>
                 </ul>
 				<a href="tel:+79512164814" class="tel">8-951-216-48-14</a>
 			</div>
@@ -50,17 +53,17 @@
 			</div>
 			<div class="box2">
 				<ul class="sale">
-					<li>
+					<li class="sale__text">
 						<h2>Одна голова хорошо,<br> а две - лучше!</h2>
 						<p>Приведи друга и получи <br>скидку 20%</p>
 						<button class="btn2">Хочу 20%</button>
 					</li>
-					<li>
+					<li class="sale__img_big">
 						<div class="hair1_brd">
 							<img class="hair1" src="img/hair1.png" alt="окрашивание">
 						</div>
 					</li>
-					<li>
+					<li class="sale__img_small">
 						<div class="hair2_brd">
 							<img class="hair2" src="img/hair2.png" alt="окрашивание">
 						</div>
@@ -135,7 +138,7 @@
 			</div>
 
 		</div>
-		
+
 		<footer class="footer pt">
 			<div class="container">
 				<nav class="footer__nav">
@@ -155,6 +158,7 @@
 	</main>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/slick.min.js"></script>
+	<script src="js/nav.js"></script>
 	<script src="js/main.js"></script>
 </body>
 
